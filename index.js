@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             menuItems.classList.toggle("show");
 
-            // Opcional: si querés hacer scroll suave al menú
+
             document.getElementById("menu").scrollIntoView({ behavior: "smooth" });
         });
     } else {
