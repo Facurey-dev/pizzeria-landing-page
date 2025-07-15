@@ -1,0 +1,139 @@
+body {
+    font-family: "Lora", serif;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    color: #333;
+}
+
+header {
+    background: #c0392b;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header {
+    background: #c0392b;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+
+.hero {
+    position: relative;
+    background: url(pizza.jpg) no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    font-size: large;
+}
+
+.hero .overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* negro transparente */
+    padding: 2rem;
+    border-radius: 10px;
+    display: inline-block;
+}
+.hero h2, .hero p {
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+.menu, .nosotros, .contacto {
+    padding: 2rem;
+    text-align: center;
+}
+#menu-items {
+    opacity: 0;
+    visibility: hidden;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.5s ease, max-height 0.5s ease;
+}
+
+#menu-items.show {
+    opacity: 1;
+    visibility: visible;
+    max-height: none; /* O un valor muy alto como 3000px */
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #fefefe;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem auto;
+    max-width: 400px;
+}
+
+
+.item img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    margin-bottom: 10px;
+    display: block;
+} /* <- faltaba esta llave */
+
+.item h3, .item p {
+    color: #333;
+}
+
+
+.whatsapp-btn {
+    background: #25d366;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.whatsapp-btn:hover {
+    background-color: #1ebe57;
+    transform: scale(1.05);
+    transition: 0.2s ease;
+}
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+footer{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
